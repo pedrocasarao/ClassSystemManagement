@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ClassSystemManagement
+﻿namespace ClassSystemManagement
 {
-     class Student
+    class Student : Person
     {
-        
-        public Student(string name , int age, char level ) 
+        Char level;
+        public Student()
         {
-            Name  = name;
-            Age = age;
+
+        }
+        public Student(char level)
+        {
             this.level = level;
         }
-        public char level; 
-        public string Name 
-        { get; set; }
-        public int Age 
-        { get; set; }
-        public Boolean Status 
-        { get; set; }
 
+        public override string toString()
+        {
+            return base.toString() + "\n Level " + level;
+        }
     }
+
 }
