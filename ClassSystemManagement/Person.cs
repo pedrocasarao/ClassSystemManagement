@@ -29,7 +29,7 @@
         {
             this.phone = phone;
         }
-        public void setEmail()
+        public void setEmail(string email)
         {
             this.email = email;
         }

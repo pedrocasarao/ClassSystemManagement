@@ -25,7 +25,7 @@ namespace ClassSystemManagement
                 
         }
 
-        public void removeTeacher(string name)
+        public bool RemoveTeacher(string name)
         {
 
             for (int i = 0; i < allTeacher.Count; i++)
@@ -33,10 +33,16 @@ namespace ClassSystemManagement
                 if (allTeacher[i].getName().Equals(name) == true)
                 {
                     allTeacher.RemoveAt(i);
+                    return true;
                 }
+                else
+                    return false; 
             }
 
-        }       
+            return false;
+        }     
+        
+
      }
 
 
