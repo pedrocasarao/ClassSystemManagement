@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Net.Http.Headers;
 using System.Numerics;
@@ -23,6 +24,20 @@ namespace ClassSystemManagement
             
                 
         }
-        
-    }
+
+        public void removeTeacher(string name)
+        {
+
+            for (int i = 0; i < allTeacher.Count; i++)
+            {
+                if (allTeacher[i].getName().Equals(name) == true)
+                {
+                    allTeacher.RemoveAt(i);
+                }
+            }
+
+        }       
+     }
+
+
 }

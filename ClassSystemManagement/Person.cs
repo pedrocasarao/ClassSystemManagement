@@ -29,7 +29,7 @@
         {
             this.phone = phone;
         }
-        public void setEmail(string email)
+        public void setEmail()
         {
             this.email = email;
         }
@@ -41,7 +41,7 @@
         {
             return surname;
         }
-        public float getPhone()
+        public float getPhone( )
         {
             return phone;
         }

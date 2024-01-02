@@ -1,5 +1,6 @@
 ﻿using ClassSystemManagement;
 using System.Collections;
+using System.Reflection.Metadata;
 
 internal class Program
 {
@@ -14,11 +15,17 @@ internal class Program
 
         Console.WriteLine("ArrayTEST");
         ListTeacher listTeacher = new ListTeacher();
-        listTeacher.addNewTeacher(p1.getName(), p1.getSurname(), p1.getPhone(), p1.getEmail(), p1.getSalary());
+        listTeacher.addNewTeacher(p1.getName().ToString, p1.getSurname(), p1.getPhone(), p1.getEmail(), p1.getSalary());
 
         foreach (Teacher teacher in listTeacher) {
             Console.WriteLine(" " + teacher);
             }
+
+
+
+        Console.WriteLine("Menu Test");
+
+        
     }
 
 }
