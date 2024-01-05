@@ -2,7 +2,7 @@
 {
     class Student : Person
     {
-        Char level;
+        char level;
         public Student()
         {
 
@@ -10,6 +10,16 @@
         public Student(char level)
         {
             this.level = level;
+        }
+        public void setLevel(char level) 
+        {
+           this.level=level;
+                    
+        }
+
+        public char getLevel(char level) 
+        { 
+            return (char)level;
         }
 
         public override string toString()
